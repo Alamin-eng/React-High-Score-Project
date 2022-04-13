@@ -77,19 +77,7 @@ let countriesInOrder = () =>{
     }
   })
 }
-// let scoresInOrder = () => {
-//     for (let { scores } of allCountryScores)
-//       return scores.sort((a, b) => {
-//         if (a.s.toString() > b.s.toString()) {
-//           return -1;
-//         } else if (a.s.toString() < b.s.toString()) {
-//           return 1;
-//         } else {
-//           return 0;
-//         }
-//       });
-//   };
-  // console.log(scoresInOrder())
+
 function App() {
   return (
     <div>

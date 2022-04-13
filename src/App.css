@@ -53,7 +53,7 @@ h1 {
   border: 3px solid rgb(3, 110, 211);
 }
 .summary {
-  border: 10px solid greenyellow;
+  border: 10px solid rgb(255, 47, 47);
   padding: 0 2em;
 }
 .redNumbers {
