@@ -8,7 +8,7 @@ function WorldWideScores(props) {
     .forEach((score) => (allScores = allScores.concat(score)));
 
   let allSortedScores = allScores.sort(
-    (player1, player2) => player2.s - player1.s
+    (a,z) => z.s - a.s
   );
 
   return (
