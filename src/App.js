@@ -2,7 +2,6 @@ import React from 'react';
 import NamesAndScores from "./NamesAndScores";
 import "./App.css";
 import allCountryScores from './allCountryData';
-import ScoreTable from './scoreTable';
 import Header from './header';
 import WorldWideScores from "./worldScores";
 

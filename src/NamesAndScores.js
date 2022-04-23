@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import allCountryScores from "./allCountryData.js";
 import ScoreTable from "./scoreTable.js";
 import AscendingTable from "./AscendingTable";
 
