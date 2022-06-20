@@ -5,8 +5,6 @@ import allCountryScores from './allCountryData';
 import Header from './header';
 import WorldWideScores from "./worldScores";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 function App() {
     let countriesInOrder = () => {
       return allCountryScores.sort((a, b) => {
