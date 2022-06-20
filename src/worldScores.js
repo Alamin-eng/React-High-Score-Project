@@ -12,11 +12,11 @@ function WorldWideScores(props) {
   );
 
   return (
-    <div className="world-div p-2 m-4">
-      <h1 className="App-header">World Wide High Scores</h1>
-      <table>
+    <div className="world-div">
+      <h2 className="text-primary">World Wide High Scores</h2>
+      <table >
         <thead>
-          <tr>
+          <tr className="text-danger">
             <th>Player Name</th>
             <th>Player Score</th>
           </tr>
@@ -25,7 +25,7 @@ function WorldWideScores(props) {
           <tbody key={index}>
             <tr>
               <td className="player-name">{score.n}</td>
-              <td className="text-primary">{score.s}</td>
+              <td >{score.s}</td>
             </tr>
           </tbody>
         ))}

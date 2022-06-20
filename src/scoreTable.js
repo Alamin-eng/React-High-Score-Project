@@ -10,9 +10,7 @@ const ScoreTable = (props) => {
               <tbody>
                 <tr className="div-table">
                   <td className="p-2">{e.n}</td>
-                  <td>
-                    {e.s}
-                  </td>
+                  <td className="p-2">{e.s}</td>
                 </tr>
               </tbody>
             </table>

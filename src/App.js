@@ -5,6 +5,7 @@ import allCountryScores from './allCountryData';
 import Header from './header';
 import WorldWideScores from "./worldScores";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
     let countriesInOrder = () => {
@@ -21,8 +22,8 @@ function App() {
     };
 
   return (
-    <div>
-      <WorldWideScores scores={allCountryScores} />
+    <div className="app">
+      <WorldWideScores  scores={allCountryScores} />
       <Header />
       <NamesAndScores allCountry={countriesInOrder()} />
     </div>

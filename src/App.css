@@ -1,16 +1,51 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('http://fonts.cdnfonts.com/css/aurach-bi');
+@import url('http://fonts.cdnfonts.com/css/accelerare');
+
+.app{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  letter-spacing: 2px;
 }
-.world-div{
-    column-count: 3;
-    -moz-column-count: 3;
-    -webkit-column-count:3;
-    margin-top: 3%;
+.app-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.fontawe{
+  font-size: 1.8em;
+  color:rgb(250, 162, 162)
 }
-.div-table{
+.fontawe:hover{
+  color: rgb(249, 234, 234);
+}
+.icon{
   display: flex;
   justify-content: space-between;
-  margin: 0 30%;
+  gap:2rem;
+}
+h1, h2{
+  font-family: 'ACCELERARE', sans-serif;
+  letter-spacing: 2px;
+}
+h3{
+  font-family: 'Aurach Bi', sans-serif;
+  color:rgb(5, 189, 159)
+}
+.world-div{
+  margin-left: -1em;
+  font-weight: 500;
+  column-count: 3;
+  -moz-column-count: 3;
+  -webkit-column-count:3;
+  padding:3em;
+  background-color: rgba(246, 240, 224, 0.73);
+}
+.div-table{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 2em;
+  gap:.2em;
 }
 .rows{
   text-align: center;
@@ -23,5 +58,50 @@
 }
 button {
   border: none;
-  
+}
+.footer{
+  height:10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .6em;
+}
+.footer-icon{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  color:blue;
+}
+.up{
+  color: rgb(18, 206, 206);
+  font-size: 2.2em;
+  position: fixed;
+  right: 1rem;
+  bottom: 1.5rem;
+}
+@media only screen and (max-width: 990px) {
+  .world-div {
+      column-count: 1;
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      height: 3in;
+      overflow:scroll;
+    }
+
+  .world-div table {
+      display:table;
+    }
+    .div-table {
+      display: grid;
+      grid-template-columns: repeat(2, 130px);
+      margin: 0 2em;
+      gap: .2em;
+    }
+     .app-header {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: auto;
+     }
+
 }
